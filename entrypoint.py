@@ -8,3 +8,5 @@ from scrapy import cmdline
 cmdline.execute(['scrapy','runspider','basic.py','-o','data.json','-s','FEED_EXPORT_ENCODING=utf-8'])
 
 # scrapy runspider basic.py -o data.json -s FEED_EXPORT_ENCODING=utf-8
+
+# crapy genspider -t crawl easy web                 # generate a bidirectional crawl

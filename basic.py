@@ -27,9 +27,6 @@ class BasicSpider(scrapy.Spider):
          @scrapes url spider server date
         """
         i=0
-        # self.log("name: %s"% response.xpath('//*[@class="team_name away_name"][1]/text()').extract())
-        # self.log("name2: %s"% response.xpath('//*[@id="match_detail_wrap"]/div[2]/div[2]/div[1]/a[4]/text()').extract())
-        # print("name3: %s" % response.xpath('//*[@id="match_detail_wrap"]/div[2]/div[4]/div[2]/div[1]/table/tr[4]/td[1]/text()').extract())
         while(1):
             i+=1
             if len(response.xpath('(//*[@class="team-name"])[%d]/text()'%i))<1:
